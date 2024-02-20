@@ -23,6 +23,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.llms import GPT4All
 from pdf2image import convert_from_path
+import streamlit
 
 """Download file pdf"""
 
@@ -93,9 +94,9 @@ chain = RetrievalQA.from_chain_type(
 def print_response(response: str):
     print("\n".join(textwrap.wrap(response, width=100)))
 
-query = "Phạm vi áp dụng có nằm trong mục đích hay không?"
+query = st.text_input("Nhập câu hỏi", "Phạm vi áp dụng có nằm trong mục đích hay không?")
 response = chain.run(query)
-print_response(response)
+st.write(response)
 
 query = "MapReduce là gì?"
 response = chain.run(query)
