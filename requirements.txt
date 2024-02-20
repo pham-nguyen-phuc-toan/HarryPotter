@@ -1,2 +1,9 @@
-llama_index
+sentence_transformers==2.2.2
 langchain
+tiktoken
+pypdf
+faiss-gpu
+InstructorEmbedding 
+transformers 
+accelerate
+bitsandbytes
