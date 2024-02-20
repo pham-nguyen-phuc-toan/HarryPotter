@@ -1,7 +1,3 @@
-# Install llama_index which is a popular middleware used in many GenAI applications
-!pip install llama_index
-!pip install langchain
-
 # Import necessary classes and functions from the llama_index and langchain libraries
 from llama_index.core import GPTVectorStoreIndex, SimpleDirectoryReader, ServiceContext, StorageContext
 # from llama_index import LLMPredictor, load_index_from_storage
