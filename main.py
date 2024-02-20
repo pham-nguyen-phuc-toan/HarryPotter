@@ -10,6 +10,8 @@ Original file is located at
 import os
 import textwrap
 
+import pip
+
 import chromadb
 import langchain
 import openai
