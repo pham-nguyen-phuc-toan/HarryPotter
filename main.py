@@ -75,21 +75,21 @@ def get_model(model = CFG.model_name):
         
         max_len = 1024
 
-    elif model == 'llama2-7b-chat':
-        model_repo = 'daryl149/llama-2-7b-chat-hf'
+    # elif model == 'llama2-7b-chat':
+    #     model_repo = 'daryl149/llama-2-7b-chat-hf'
         
-        tokenizer = AutoTokenizer.from_pretrained(model_repo, use_fast=True)
+    #     tokenizer = AutoTokenizer.from_pretrained(model_repo, use_fast=True)
 
-        model = AutoModelForCausalLM.from_pretrained(
-            model_repo,
-            load_in_4bit = True,
-            device_map = 'auto',
-            torch_dtype = torch.float16,
-            low_cpu_mem_usage = True,
-            trust_remote_code = True
-        )
+    #     model = AutoModelForCausalLM.from_pretrained(
+    #         model_repo,
+    #         load_in_4bit = True,
+    #         device_map = 'auto',
+    #         torch_dtype = torch.float16,
+    #         low_cpu_mem_usage = True,
+    #         trust_remote_code = True
+    #     )
         
-        max_len = 2048
+    #     max_len = 2048
 
     elif model == 'llama2-13b-chat':
         model_repo = 'daryl149/llama-2-13b-chat-hf'
@@ -107,23 +107,23 @@ def get_model(model = CFG.model_name):
         
         max_len = 2048 # 8192
 
-    elif model == 'mistral-7B':
-        model_repo = 'mistralai/Mistral-7B-v0.1'
+    # elif model == 'mistral-7B':
+    #     model_repo = 'mistralai/Mistral-7B-v0.1'
         
-        tokenizer = AutoTokenizer.from_pretrained(model_repo)
+    #     tokenizer = AutoTokenizer.from_pretrained(model_repo)
 
-        model = AutoModelForCausalLM.from_pretrained(
-            model_repo,
-            load_in_4bit = True,
-            device_map = 'auto',
-            torch_dtype = torch.float16,
-            low_cpu_mem_usage = True,
-        )
+    #     model = AutoModelForCausalLM.from_pretrained(
+    #         model_repo,
+    #         load_in_4bit = True,
+    #         device_map = 'auto',
+    #         torch_dtype = torch.float16,
+    #         low_cpu_mem_usage = True,
+    #     )
         
-        max_len = 1024
+    #     max_len = 1024
 
-    else:
-        print("Not implemented model (tokenizer and backbone)")
+    # else:
+    #     print("Not implemented model (tokenizer and backbone)")
 
     return tokenizer, model, max_len
 
