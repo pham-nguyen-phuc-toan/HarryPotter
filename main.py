@@ -7,17 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1ow2rNVOyQKowv8nTp_pBgwZsZSrFXqiJ
 """
 
-pip install -Uqqq pip --progress-bar off
-pip install -qqq openai==0.27.4 --progress-bar off
-pip install -Uqqq watermark==2.3.1 --progress-bar off
-pip install -qqq langchain==0.0.173 --progress-bar off
-pip install -qqq chromadb==0.3.23 --progress-bar off
-pip install -qqq pypdf==3.8.1 --progress-bar off
-pip install -qqq pygpt4all==1.1.0 --progress-bar off
-pip install -qqq pdf2image==1.16.3 --progress-bar off
-pip install -Uqqq tiktoken==0.3.3 --progress-bar off
-pip install -Uqqq unstructured[local-inference]==0.5.12 --progress-bar off
-
 import os
 import textwrap
 
