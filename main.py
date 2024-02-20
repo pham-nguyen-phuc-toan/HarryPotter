@@ -7,10 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1ow2rNVOyQKowv8nTp_pBgwZsZSrFXqiJ
 """
 
-!sudo apt-get clean
-!sudo apt-get update
-!sudo apt-get install poppler-utils
-
 !pip install -Uqqq pip --progress-bar off
 !pip install -qqq openai==0.27.4 --progress-bar off
 !pip install -Uqqq watermark==2.3.1 --progress-bar off
