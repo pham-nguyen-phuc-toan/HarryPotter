@@ -1,5 +1,3 @@
-%%time
-
 import streamlit
 import warnings
 warnings.filterwarnings("ignore")
