@@ -7,3 +7,4 @@ InstructorEmbedding
 transformers 
 accelerate
 bitsandbytes
+streamlit
